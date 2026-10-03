@@ -7,6 +7,7 @@
 
 body {
     min-height: 100vh;
+
     background-color: #eef5ff;
     color: #1e293b;
 
@@ -15,6 +16,8 @@ body {
     align-items: center;
 
     padding: 30px 20px;
+
+    transition: 0.3s;
 }
 
 /* Cabeçalho */
@@ -36,6 +39,30 @@ h2 {
     color: #475569;
 }
 
+/* Botão */
+
+#botaoTema {
+    margin-top: 20px;
+
+    padding: 10px 18px;
+
+    background-color: #1d4ed8;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+#botaoTema:hover {
+    background-color: #1e40af;
+}
+
 /* Imagens */
 
 .imagens {
@@ -43,19 +70,26 @@ h2 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
+
     max-width: 1300px;
 }
 
 figure {
     width: 400px;
+
     background-color: white;
+
     padding: 15px;
+
     border-radius: 10px;
 
     border: 1px solid #dbeafe;
+
     box-shadow: 0 2px 8px rgba(30, 64, 175, 0.12);
 
     text-align: center;
+
+    transition: 0.3s;
 }
 
 img {
@@ -66,8 +100,10 @@ img {
 
 figcaption {
     margin-top: 10px;
+
     font-size: 16px;
     font-weight: bold;
+
     color: #1e40af;
 }
 
@@ -75,8 +111,47 @@ figcaption {
 
 footer {
     margin-top: 35px;
+
     color: #64748b;
+
     font-size: 14px;
+}
+
+/* ========================= */
+/* MODO ESCURO */
+/* ========================= */
+
+body.dark {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+body.dark h1 {
+    color: #60a5fa;
+}
+
+body.dark h2 {
+    color: #cbd5e1;
+}
+
+body.dark figure {
+    background-color: #1e293b;
+    border-color: #334155;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark figcaption {
+    color: #93c5fd;
+}
+
+body.dark footer {
+    color: #94a3b8;
+}
+
+body.dark #botaoTema {
+    background-color: #f8fafc;
+    color: #0f172a;
 }
 
 /* Responsividade */
@@ -98,5 +173,4 @@ footer {
     figure {
         width: 100%;
     }
-
 }
